@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*******************Contains all section one style including nav*******
+********************
+********************
+********************
+********************
+********************/
+.section-header-one {
+  height: 126.6vh;
+  background: #006F5c;
+}
+
+.landing-page-hero-image {
+  height: 200px;
+  width: 200px;
+}
+
+.landing-page-hero-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-nav-logo
+.nav-logo-icon {
+  height: 30px;
+  width: auto;
+}
+
+.right-box .navbar-search {
+  position: relative;
+}
+
+.right-box input {
+  position: relative;
+  height: 40px;
+  border-radius: 4px;
+  text-indent: 32px;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 20px;
+  min-width: 255px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+.right-box svg {
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  height: 16px;
+  width: 16px;
+}
+
+/************contains code for section 2*******/
+/*# sourceMappingURL=style.css.map */

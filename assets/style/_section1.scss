@@ -1,0 +1,60 @@
+/*******************Contains all section one style including nav*******
+********************
+********************
+********************
+********************
+********************/
+
+.section-header-one {
+    height: 126.6vh;
+    background: $section-one-bg-color;
+}
+
+.landing-page-hero-image {
+    height: 200px;
+    width: 200px;
+    // background-color: blue;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.homepage-nav-logo
+.nav-logo-icon{
+    height: 30px;
+    width: auto;
+}
+
+
+.right-box {
+
+    .navbar-search {
+        position: relative;
+    }
+
+    input {
+        position: relative;
+        // padding: 10px 0px 10px 0px;
+        height: 40px;
+        border-radius: 4px;
+        text-indent: 32px;
+        font-size: 14px;
+        box-sizing: border-box;
+        line-height: 20px;
+        min-width: 255px;
+        appearance: none;
+        outline: none;
+    }
+
+    svg {
+        position: absolute;
+        left: 11px;
+        top: 11px;
+        height: 16px;
+        width: 16px;
+
+    }
+}
+
