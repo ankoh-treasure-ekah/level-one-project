@@ -1,0 +1,88 @@
+/********code for section three*******/
+.section-substack-container-column-flex {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.section-header-default {
+    font-family: Cahuenga, serif;
+    font-size: 55px;
+    line-height: 68.2px;
+    font-weight: 400;
+    color: #404040;
+    max-width: 764px;
+    text-align: center;
+
+}
+
+
+
+.section-three-levels-container {
+    flex-direction: column;
+    gap: 0px;
+}
+
+.section-three-level-container {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-three-levels-img-container {
+    min-width: 200px;
+    width: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.section-three-levels-text-container {
+    flex-direction: column;
+    width: 50%;
+    gap: 24px;
+
+    h3 {
+        font-family: Cahuenga, serif;
+        font-size: 38px;
+        line-height: 40.13px;
+        color: #404040;
+        font-weight: 600;
+    }
+    
+    p {
+        font-size: 17px;
+        letter-spacing: -0.45px;
+        line-height: 23px;
+        color: #404040;
+        font-family: 'SF Pro Text','SF Compact Display',
+            -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+            Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji',
+            'Segoe UI Symbol';
+    }
+
+    a {
+        text-decoration: none;
+        color: $general-color;
+    }
+
+    .section-three-levels-text-container-link-container{
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .section-three-levels-text-container-link {
+        font-size: 17px;
+        letter-spacing: -0.45px;
+        line-height: 23px;
+        font-family: 'SF Pro Text','SF Compact Display',
+            -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+            Helvetica,Arial,sans-serif,'Apple Color Emoji',
+            'Segoe UI Emoji','Segoe UI Symbol';
+        font-weight: 700;
+    }
+}

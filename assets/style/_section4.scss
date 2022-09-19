@@ -1,0 +1,128 @@
+/******* contains code for section 4 world class reading experience ****/
+
+
+.section-discovery {
+    background: #eeeeee;
+}
+
+.section-discovery-flex-container {
+    flex-direction: column;
+    // align-items: center;
+
+    h2 {
+        align-self: center;
+    }
+}
+
+.section-discovery-content-container {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+
+    img {
+        max-width: 568px;
+        // min-width: 200px;
+        flex-basis: 568px;
+        flex-shrink: 1;
+    }
+}
+
+
+.section-discovery-content-right-conatiner {
+    flex-direction: column;
+    gap: 0px;
+    flex-basis: 470px;
+    flex-shrink: 1;
+}
+
+
+.section-discovery-content-container-text-sec {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 24px;
+    padding: 32px 0 32px 65px;
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 445px;
+
+    button {
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.panel {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel.active {
+    display: flex;
+    // max-height: 200px;
+}
+
+
+.section-discovery-svg-button {
+    position: absolute;
+    left: 0px;
+    // transform: rotate(180deg);
+}
+
+.section-discovery-svg-button.active {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.section-discovery-btn-head {
+    font-family: Cahuenga, serif;
+    font-size: 38px;
+    line-height: 40.13px;
+    color: #404040;
+    font-weight: 600;
+}
+
+.section-discovery-text {
+    font-size: 17px;
+    letter-spacing: -0.45px;
+    line-height: 23px;
+    color: #404040;
+    font-family: 'SF Pro Text','SF Compact Display',
+        -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+        Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji',
+        'Segoe UI Symbol';
+}
+
+
+
+
+
+.btn-create-your-substack {
+    text-decoration: none;
+    color: $general-color;
+}
+
+.btn-create-your-substack-container {
+    flex-direction: row;
+    gap: 6px;
+}
+
+.btn-create-your-substack-text {
+    font-size: 17px;
+    letter-spacing: -0.45px;
+    line-height: 23px;
+    font-family: 'SF Pro Text','SF Compact Display',
+        -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+        Helvetica,Arial,sans-serif,'Apple Color Emoji',
+        'Segoe UI Emoji','Segoe UI Symbol';
+    font-weight: 700;
+}
+

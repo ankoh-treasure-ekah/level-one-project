@@ -13,8 +13,8 @@
 <body>
     <div class="body-container">
         <section class="section-header-one">
-            <nav class="nav-box">
-                <nav class="left-box">
+            <nav class="nav-box flex-container">
+                <nav class="left-box flex-container">
                     <a href="/index.html" class="homepage-nav-logo">
                         <svg role="img" width="21" height="24" viewBox="0 0 21 24" fill="#FF6719" stroke-width="1" stroke="none" xmlns="http://www.w3.org/2000/svg" class="nav-logo-icon">
                             <g><title></title>
@@ -28,7 +28,9 @@
                         <button class="left-nav-buttons resource-button" type="button">
                             <span>Resources</span>
                         </button>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1" stroke="#555" xmlns="http://www.w3.org/2000/svg">
+                            <g><title></title><path d="M1 1L9 9L17 1" stroke="white" stroke-width="2"></path></g>
+                        </svg>
                         <ul class="dropdown-menu resource-dropdown">
                             <nav class="dropdown-wrapper">
                                 <li class="drop-item">
@@ -58,7 +60,9 @@
                         <button class="left-nav-buttons readers-button" type="button">
                             <span>Readers</span>
                         </button>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1" stroke="#555" xmlns="http://www.w3.org/2000/svg">
+                            <g><title></title><path d="M1 1L9 9L17 1" stroke="white" stroke-width="2"></path></g>
+                        </svg>
                         <ul class="dropdown-menu Writers-dropdown">
                             <nav class="dropdown-wrapper">
                                 <li class="drop-item">
@@ -108,7 +112,9 @@
                         <button class="left-nav-buttons writers-button" type="button">
                             <span>Writers</span>
                         </button>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <svg role="img" width="12" height="10" viewBox="0 0 18 10" fill="none" stroke-width="1" stroke="#555" xmlns="http://www.w3.org/2000/svg">
+                            <g><title></title><path d="M1 1L9 9L17 1" stroke="white" stroke-width="2"></path></g>
+                        </svg>
                         <ul class="dropdown-menu Readers-dropdown">
                             <nav class="dropdown-wrapper">
                                 <li class="drop-item">
@@ -130,14 +136,14 @@
                         </ul>   
                     </div>
                 </nav>
-                <nav class="right-box">
+                <nav class="right-box flex-container">
                     <form class="navbar-search">
-                        <input type="text" placeholder="Search Substack..." autocomplete="off">
-                        <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="#000" xmlns="http://www.w3.org/2000/svg">
+                        <input type="text" placeholder="Search Substack..." style="color:white;" autocomplete="off">
+                        <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1" stroke="white" xmlns="http://www.w3.org/2000/svg">
                             <g>
                                 <title></title>
-                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21.0004 21.0004L16.6504 16.6504" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             </g>
                         </svg>
                     </form>
@@ -149,73 +155,537 @@
                     </button>
                 </nav>
             </nav>
-            <div class="landing-page-hero">
-                <div class="landing-page-hero-item landing-page-hero-text">
-                    <h1>
+            <div class="flex-container landing-page-hero">
+                <div class="landing-page-hero-item landing-page-hero-text flex-container">
+                    <h1 class="section-header-default">
                         Do your best work, supported by your subscribers
                     </h1>
                     <p>
                         Substack lets independent writers and podcasters 
                         publish directly to their audience and get paid through subscriptions.
                     </p>
-                    <div class="landing-page-hero-buttons">
-                        <button>Create your Substack</button>
-                        <button>Find Substacks to read</button>
+                    <div class="landing-page-hero-buttons flex-container">
+                        <div class="btn-main">
+                            <button class="btn-page hero-btn-one">Create your Substack</button>
+                        </div>
+                        <div class="btn-main">
+                            <button class="btn-page hero-btn-two">Find Substacks to read</button>
+                        </div>
+                        
+                        
                     </div>
                 </div>
-                <div class="landing-page-hero-item landing-page-hero-image">
-                    <img src="./images/hero_image.png" alt="image of a tall building">
-                </div>
+                <img class="landing-page-hero-image" src="./images/hero_image.png" alt="image of a tall building">
             </div>
         </section>
 
         <section class="section-marketing">
-            <div class="section-marketing-container">
-                <div class="content-wrapper">
-                    <h2>The home for great writers & podcasters</h2>
-                    <div class="homepage-leaderboard-container">
+            <div class="section-container-default section-marketing-container">
+                <div class="flex-container content-wrapper section-marketing-content">
+                    <h2 class="section-header-default">The home for great writers & podcasters</h2>
+                    <div class="homepage-leaderboard-container flex-container">
                         <div class="overflow-list-container">
+                            <button class="left-marketing-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
                             <div class="overflow-items">
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Featured</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Culture</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Politics</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Technology</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Business</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Finance</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Food &amp; Drink</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Podcasts</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Sports</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Faith &amp; Spirituality</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">News</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Music</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Comics</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Crypto</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">International</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Art &amp; Illustration</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Climate</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Science</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Health &amp; Wellness</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Literature</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Fiction</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Parenting</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Travel</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Education</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Philosophy</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">History</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Humor</span></a></div>
-                                <div class="menu-item"><a role="button" tabindex="0"><span class="overflow-item-text">Fashion &amp; Beauty</span></a></div>
+                                <div class="menu-item"><a class="target target-1" role="button" tabindex="0"><button onclick="background_button(event, 'target-1')" class="btn-1 overflow-item-text">Featured</button></a></div>
+                                <div class="menu-item"><a class="target target-2" role="button" tabindex="0"><button onclick="background_button(event, 'target-2')" class="btn-2 overflow-item-text">Culture</button></a></div>
+                                <div class="menu-item"><a class="target target-3" role="button" tabindex="0"><button onclick="background_button(event, 'target-3')" class="btn-3 overflow-item-text">Politics</button></a></div>
+                                <div class="menu-item"><a class="target target-4" role="button" tabindex="0"><button onclick="background_button(event, 'target-4')" class="btn-4 overflow-item-text">Technology</button></a></div>
+                                <div class="menu-item"><a class="target target-5" role="button" tabindex="0"><button onclick="background_button(event, 'target-5')" class="btn-5 overflow-item-text">Business</button></a></div>
+                                <div class="menu-item"><a class="target target-6" role="button" tabindex="0"><button onclick="background_button(event, 'target-6')" class="btn-6 overflow-item-text">Finance</button></a></div>
+                                <div class="menu-item"><a class="target target-7" role="button" tabindex="0"><button onclick="background_button(event, 'target-7')" class="btn-7 overflow-item-text">Food &amp; Drink</button></a></div>
+                                <div class="menu-item"><a class="target target-8" role="button" tabindex="0"><button onclick="background_button(event, 'target-8')" class="btn-8 overflow-item-text">Podcasts</button></a></div>
+                                <div class="menu-item"><a class="target target-9" role="button" tabindex="0"><button onclick="background_button(event, 'target-9')" class="btn-9 overflow-item-text">Sports</button></a></div>
+                                <div class="menu-item"><a class="target target-10" role="button" tabindex="0"><button onclick="background_button(event, 'target-10')" class="btn-10 overflow-item-text">Faith &amp; Spirituality</button></a></div>
+                                <div class="menu-item"><a class="target target-11" role="button" tabindex="0"><button onclick="background_button(event, 'target-11')" class="btn-11 overflow-item-text">News</button></a></div>
+                                <div class="menu-item"><a class="target target-12" role="button" tabindex="0"><button onclick="background_button(event, 'target-12')" class="btn-12 overflow-item-text">Music</button></a></div>
+                                <div class="menu-item"><a class="target target-13" role="button" tabindex="0"><button onclick="background_button(event, 'target-13')" class="btn-13 overflow-item-text">Comics</button></a></div>
+                                <div class="menu-item"><a class="target target-14" role="button" tabindex="0"><button onclick="background_button(event, 'target-14')" class="btn-14 overflow-item-text">Crypto</button></a></div>
+                                <div class="menu-item"><a class="target target-15" role="button" tabindex="0"><button onclick="background_button(event, 'target-15')" class="btn-15 overflow-item-text">International</button></a></div>
+                                <div class="menu-item"><a class="target target-16" role="button" tabindex="0"><button onclick="background_button(event, 'target-16')" class="btn-16 overflow-item-text">Art &amp; Illustration</button></a></div>
+                                <div class="menu-item"><a class="target target-17" role="button" tabindex="0"><button onclick="background_button(event, 'target-17')" class="btn-17 overflow-item-text">Climate</button></a></div>
+                                <div class="menu-item"><a class="target target-18" role="button" tabindex="0"><button onclick="background_button(event, 'target-18')" class="btn-18 overflow-item-text">Science</button></a></div>
+                                <div class="menu-item"><a class="target target-19" role="button" tabindex="0"><button onclick="background_button(event, 'target-19')" class="btn-19 overflow-item-text">Health &amp; Wellness</button></a></div>
+                                <div class="menu-item"><a class="target target-20" role="button" tabindex="0"><button onclick="background_button(event, 'target-20')" class="btn-20 overflow-item-text">Literature</button></a></div>
+                                <div class="menu-item"><a class="target target-21" role="button" tabindex="0"><button onclick="background_button(event, 'target-21')" class="btn-21 overflow-item-text">Fiction</button></a></div>
+                                <div class="menu-item"><a class="target target-22" role="button" tabindex="0"><button onclick="background_button(event, 'target-22')" class="btn-22 overflow-item-text">Parenting</button></a></div>
+                                <div class="menu-item"><a class="target target-23" role="button" tabindex="0"><button onclick="background_button(event, 'target-23')" class="btn-23 overflow-item-text">Travel</button></a></div>
+                                <div class="menu-item"><a class="target target-24" role="button" tabindex="0"><button onclick="background_button(event, 'target-24')" class="btn-24 overflow-item-text">Education</button></a></div>
+                                <div class="menu-item"><a class="target target-25" role="button" tabindex="0"><button onclick="background_button(event, 'target-25')" class="btn-25 overflow-item-text">Philosophy</button></a></div>
+                                <div class="menu-item"><a class="target target-26" role="button" tabindex="0"><button onclick="background_button(event, 'target-26')" class="btn-26 overflow-item-text">History</button></a></div>
+                                <div class="menu-item"><a class="target target-27" role="button" tabindex="0"><button onclick="background_button(event, 'target-27')" class="btn-27 overflow-item-text">Humor</button></a></div>
+                                <div class="menu-item"><a class="target target-28" role="button" tabindex="0"><button onclick="background_button(event, 'target-28')" class="btn-28 overflow-item-text">Fashion &amp; Beauty</button></a></div>
+                            </div>
+                            <button class="right-marketing-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hompage-leaderboard-content-container flex-container">
+                        <div class="hompage-leaderboard-content-container-first flex-container">
+                            <div class="homepage-leaderboard-content-rank">1</div>
+                            <div class="homepage-leaderboard-content-sec-one flex flex-container">
+                                <div class="homepage-leaderboard-content-pub-icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/yellow-m.webp">
+                                        <img src="./images/yellow-m.webp" alt="yello-m" sizes="100vw" srcset width="64" height="64">
+                                    </picture>
+                                </div>
+                                <a href="https://tedgioia.substack.com/?utm_source=leaderboard">
+                                    <div class="homepage-leaderboard-content-link flex-container">
+                                        <h4 class="homepage-leaderboard-content-link-h4">The Honest Broker</h4>
+                                        <h5 class="homepage-leaderboard-content-link-h5">Ted Gioia</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="homepage-leaderboard-content-sec-two flex-container">
+                                <div class="homepage-leaderboard-content-sec-two-layer-one">
+                                    Ted Gioia’s thoughtful writing covers a range of topics in music and culture, 
+                                    from the overlooked genre of lullabies to the secret histories of jazz greats.
+                                </div>
+                                <div class="homepage-leaderboard-content-sec-two-layer-two">
+                                    Thousands of paid subscribers · $6/month
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hompage-leaderboard-content-container-first flex-container">
+                            <div class="homepage-leaderboard-content-rank">2</div>
+                            <div class="homepage-leaderboard-content-sec-one flex flex-container">
+                                <div class="homepage-leaderboard-content-pub-icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/colors.webp">
+                                        <img src="./images/colors.webp" alt="yello-m" sizes="100vw" srcset width="64" height="64">
+                                    </picture>
+                                </div>
+                                <a href="https://tedgioia.substack.com/?utm_source=leaderboard">
+                                    <div class="homepage-leaderboard-content-link flex-container">
+                                        <h4 class="homepage-leaderboard-content-link-h4">Exponential View by Azeem Azhar</h4>
+                                        <h5 class="homepage-leaderboard-content-link-h5">Azeem Azhar</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="homepage-leaderboard-content-sec-two flex-container">
+                                <div class="homepage-leaderboard-content-sec-two-layer-one">
+                                    Technologist and author Azeem Azhar delivers a weekly guide to the future and how exponential technologies such as AI,
+                                     synthetic biology, and renewable energy, challenge our economic and social fabric in chaotic ways.
+                                </div>
+                                <div class="homepage-leaderboard-content-sec-two-layer-two">
+                                    Thousands of paid subscribers · $12/month
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hompage-leaderboard-content-container-first flex-container">
+                            <div class="homepage-leaderboard-content-rank">3</div>
+                            <div class="homepage-leaderboard-content-sec-one flex flex-container">
+                                <div class="homepage-leaderboard-content-pub-icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/chopwood.webp">
+                                        <img src="./images/chopwood.webp" alt="yello-m" sizes="100vw" srcset width="64" height="64">
+                                    </picture>
+                                </div>
+                                <a href="https://tedgioia.substack.com/?utm_source=leaderboard">
+                                    <div class="homepage-leaderboard-content-link flex-container">
+                                        <h4 class="homepage-leaderboard-content-link-h4">Perfectly Imperfect</h4>
+                                        <h5 class="homepage-leaderboard-content-link-h5">Perfectly Imperfect</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="homepage-leaderboard-content-sec-two flex-container">
+                                <div class="homepage-leaderboard-content-sec-two-layer-one">
+                                    Perfectly Imperfect is a newsletter about what people are into. Twice a week invited guests
+                                     are asked to share a taste of their taste with readers.
+                                </div>
+                                <div class="homepage-leaderboard-content-sec-two-layer-two">
+                                    Launched 2 years ago
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hompage-leaderboard-content-container-first flex-container">
+                            <div class="homepage-leaderboard-content-rank">4</div>
+                            <div class="homepage-leaderboard-content-sec-one flex flex-container">
+                                <div class="homepage-leaderboard-content-pub-icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/lines.webp">
+                                        <img src="./images/lines.webp" alt="yello-m" sizes="100vw" srcset width="64" height="64">
+                                    </picture>
+                                </div>
+                                <a href="https://tedgioia.substack.com/?utm_source=leaderboard">
+                                    <div class="homepage-leaderboard-content-link flex-container">
+                                        <h4 class="homepage-leaderboard-content-link-h4">The Algorithmic Bridge</h4>
+                                        <h5 class="homepage-leaderboard-content-link-h5">Alberto Romero</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="homepage-leaderboard-content-sec-two flex-container">
+                                <div class="homepage-leaderboard-content-sec-two-layer-one">
+                                    Bridging the gap between algorithms and people, this newsletter is about artificial intelligence
+                                     and how it influences our daily lives and the world around us.
+                                </div>
+                                <div class="homepage-leaderboard-content-sec-two-layer-two">
+                                    Launched 3 months ago · $5/month
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hompage-leaderboard-content-container-first flex-container">
+                            <div class="homepage-leaderboard-content-rank">5</div>
+                            <div class="homepage-leaderboard-content-sec-one flex flex-container">
+                                <div class="homepage-leaderboard-content-pub-icon">
+                                    <picture>
+                                        <source type="image/webp" srcset="./images/bulb.webp">
+                                        <img src="./images/bulb.webp" alt="yello-m" sizes="100vw" srcset width="64" height="64">
+                                    </picture>
+                                </div>
+                                <a href="https://tedgioia.substack.com/?utm_source=leaderboard">
+                                    <div class="homepage-leaderboard-content-link flex-container">
+                                        <h4 class="homepage-leaderboard-content-link-h4">Meeting in the Middle</h4>
+                                        <h5 class="homepage-leaderboard-content-link-h5">Vanessa Torre</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="homepage-leaderboard-content-sec-two flex-container">
+                                <div class="homepage-leaderboard-content-sec-two-layer-one">
+                                    Meeting in the Middle is a publication by Vanessa Torre including personal and practical advice
+                                     on singlehood, dating, and relationships in midlife.
+                                </div>
+                                <div class="homepage-leaderboard-content-sec-two-layer-two">
+                                    Launched 3 months ago · $12/month
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-
-                    </div>
-                    <div>
-
+                    <div class="btn-main">
+                        <button class="btn-page">
+                            See who else is on Substack
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="section-substack-describtion">
+            <div class="section-container-default section-substack-describtion-container">
+                <div class="section-substack-container-column-flex content-wrapper flex-container">
+                    <h2 class="section-header-default">
+                        A new model for publishing
+                    </h2>
+                    <div class="section-three-levels-container flex-container">
+                        <div class="section-three-level-container flex-container">
+                            <div class="section-three-levels-img-container">
+                                <!--picture goes here-->
+                                <img src="./images/benefit-1.png" alt="colored birds">
+                            </div>
+                            <div class="section-three-levels-text-container flex-container">
+                                <h3>You wrote it, you own it.</h1>
+                                <p>You always own your intellectual property, mailing list, 
+                                    and subscriber payments. With full editorial control and 
+                                    no gatekeepers, you can do the work you most believe in.
+                                </p>
+                                <a href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                    <div class="section-three-levels-text-container-link-container flex-container">
+                                        <div class="section-three-levels-text-container-link">Create your Substack</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-three-level-container flex-container">
+                            <div class="section-three-levels-img-container">
+                                <!--picture goes here-->
+                                <img src="./images/benefit-2.png" alt="colored kettle">
+                            </div>
+                            <div class="section-three-levels-text-container flex-container">
+                                <h3>Grow your audience.</h1>
+                                <p>Marketing isn’t all on your shoulders. More than 30% of all new
+                                     free subscriptions and around 10% of paid subscriptions to Substacks
+                                      come from within our network.
+                                </p>
+                                <a href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                    <div class="section-three-levels-text-container-link-container flex-container">
+                                        <div class="section-three-levels-text-container-link">Create your Substack</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-three-level-container flex-container">
+                            <div class="section-three-levels-img-container">
+                                <!--picture goes here-->
+                                <img src="./images/benefit-3.png" alt="colored birds">
+                            </div>
+                            <div class="section-three-levels-text-container flex-container">
+                                <h3>Let us handle everything else.</h1>
+                                <p>A Substack combines a blog, newsletter, payment system, and customer
+                                     support team — all integrated seamlessly with a simple interface. We handle the admin,
+                                      billing, and tech so you can focus on your best work.
+                                </p>
+                                <a href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                    <div class="section-three-levels-text-container-link-container flex-container">
+                                        <div class="section-three-levels-text-container-link">Create your Substack</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-discovery">
+            <div class="section-container-default">
+                <div class="section-discovery-flex-container content-wrapper flex-container">
+                    <h2 class="section-header-default">
+                        A world-class reading
+                         and listening experience
+                    </h2>
+                    <div class="section-discovery-content-container flex-container">
+                        <img src="./images/phoneV2.png" alt="phone showing list of items">
+                        <div class="section-discovery-content-right-conatiner flex-container">
+                            <div class="section-discovery-content-container-text-sec flex-container">
+                                <button class="section-discovery-svg-button">
+                                    <svg role="img" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke-width="1" stroke="#000"
+                                        xmlns="http://www.w3.org/2000/svg"><g><title></title>return 
+                                        <path d="M4 7L8 11L12 7" stroke="#FF6719" stroke-linecap="round" stroke-linejoin="round"></path>;</g>
+                                    </svg>
+                                </button>
+    
+                                <button class="section-discovery-btn-head">
+                                    <h3>
+                                        Posts
+                                    </h3>
+                                </button>
+                                <div class="panel">
+                                    <p class="section-discovery-text">
+                                        Substack’s simple system lets you publish to the web, email,
+                                         and our app simultaneously so you can find new readers and always
+                                          reach your existing audience.
+                                    </p>
+        
+                                    <a class="btn-create-your-substack" href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                        <div class="btn-create-your-substack-container flex-container">
+                                            <div class="btn-create-your-substack-text">Create your Substack</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-discovery-content-container-text-sec flex-container">
+                                <button class="section-discovery-svg-button">
+                                    <svg role="img" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke-width="1" stroke="#000"
+                                        xmlns="http://www.w3.org/2000/svg"><g><title></title>return 
+                                        <path d="M4 7L8 11L12 7" stroke="#FF6719" stroke-linecap="round" stroke-linejoin="round"></path>;</g>
+                                    </svg>
+                                </button>
+    
+                                <button class="section-discovery-btn-head">
+                                    <h3>
+                                        Podcasts
+                                    </h3>
+                                </button>
+                                <div class="panel">
+                                    <p class="section-discovery-text">
+                                        We make it easy to start a subscription 
+                                        podcast. Share episodes to Substack subscribers
+                                         and to all the major podcast players with one click.
+                                    </p>
+        
+                                    <a class="btn-create-your-substack" href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                        <div class="btn-create-your-substack-container flex-container">
+                                            <div class="btn-create-your-substack-text">Create your Substack</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+    
+    
+                            </div>
+
+                            <div class="section-discovery-content-container-text-sec flex-container">
+                                <button class="section-discovery-svg-button">
+                                    <svg role="img" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke-width="1" stroke="#000"
+                                        xmlns="http://www.w3.org/2000/svg"><g><title></title>return 
+                                        <path d="M4 7L8 11L12 7" stroke="#FF6719" stroke-linecap="round" stroke-linejoin="round"></path>;</g>
+                                    </svg>
+                                </button>
+    
+                                <button class="section-discovery-btn-head">
+                                    <h3>
+                                        Video
+                                    </h3>
+                                </button>
+                                <div class="panel">
+                                    <p class="section-discovery-text">
+                                        Upload or record videos directly into
+                                         a Substack post. Make videos available
+                                          to everyone or only paid subscribers.
+                                    </p>
+        
+                                    <a class="btn-create-your-substack" href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                        <div class="btn-create-your-substack-container flex-container">
+                                            <div class="btn-create-your-substack-text">Create your Substack</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+    
+    
+                            </div>
+
+                            <div class="section-discovery-content-container-text-sec flex-container">
+                                <button class="section-discovery-svg-button">
+                                    <svg role="img" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke-width="1" stroke="#000"
+                                        xmlns="http://www.w3.org/2000/svg"><g><title></title>return 
+                                        <path d="M4 7L8 11L12 7" stroke="#FF6719" stroke-linecap="round" stroke-linejoin="round"></path>;</g>
+                                    </svg>
+                                </button>
+    
+                                <button class="section-discovery-btn-head">
+                                    <h3>
+                                        Threads
+                                    </h3>
+                                </button>
+                                <div class="panel">
+                                    <p class="section-discovery-text">
+                                        On Substack, you’re not publishing into a void.
+                                         Comments and community threads connect you and
+                                          your subscribers directly.
+                                    </p>
+        
+                                    <a class="btn-create-your-substack" href="https://substack.com/signup?utm_source=substack&utm_medium=web&utm_campaign=home">
+                                        <div class="btn-create-your-substack-container flex-container">
+                                            <div class="btn-create-your-substack-text">Create your Substack</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-testimony">
+            <div class="section-container-reduced">
+                <div class="section-container-seperator">
+                    <div class="section-testimony-content flex-container">
+                        <h3>“I can still remember standing in the kitchen in March 2020 and watching the
+                             first $1.00 I made come through, from sharing my own research. A year later
+                              and it’s now my full-time ‘job’.”</h3>
+                        <p>– Conor Mac, Investment Talk</p>
+                        <div class="btn-main">
+                            <button class="btn-page">
+                                Create your Substack
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-documentation">
+            <div class="section-container-reduced">
+                <div class="section-container-seperator">
+                    <div class="section-documentation-content flex-container">
+                        <h2 class="section-header-default">
+                            Substack basics
+                        </h2>
+                        <div class="section-documentation-content-row-2 flex-container">
+                            <div class="section-documentation-content-row-2-stack flex-container">
+                                <h2>What is a Substack?</h2>
+                                <p>Substack helps anyone set up a blog and email newsletter.
+                                     No tech knowledge is required. Without ads and algorithms
+                                      to get in the way, you can sustain a direct relationship
+                                       with your readers and retain full control over your creative work.
+                                </p>
+                            </div>
+                            <div class="section-documentation-content-row-2-stack flex-container">
+                                <h2>Do I need to pay for Substack?</h2>
+                                <p>It’s free to get started on Substack. If you turn on paid subscriptions,
+                                     Substack will keep a 10% cut of revenues for operating costs like development
+                                      and customer support. There are no hidden fees and we only make money when writers do.
+                                </p>
+                            </div>
+                            <div class="section-documentation-content-row-2-stack flex-container">
+                                <h2>Do I own what I publish on Substack?</h2>
+                                <p>You will always own your content and your relationships with your
+                                     subscribers. We make it easy to import and export your archive,
+                                      email list, and payments information to and from other platforms.
+                                </p>
+                            </div>
+                            <div class="section-documentation-content-row-2-stack flex-container">
+                                <h2>Will Substack help me grow my audience?</h2>
+                                <p>Yes. More than <a href="https://on.substack.com/p/substack-generates-1-in-3-new-subscriptions">30% of all new free subscriptions</a> and around 10%
+                                     of paid subscriptions to Substacks come from within our network.
+                                </p>
+                            </div>
+                            <div class="section-documentation-content-row-2-stack flex-container">
+                                <h2>How do I move my past work to Substack?</h2>
+                                <p>If you already have an audience on Wordpress, Mailchimp, Revue,
+                                     Ghost, Medium, Tumblr, or another platform, you can easily <a href="https://substack.com/signup/import">import
+                                      your posts and your email list</a> in the Substack setup process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-get-started">
+            <div class="section-container-reduced">
+                <div class="section-container-seperator">
+                    <div class="section-get-started-content flex-container">
+                        <h1 class="section-header-default">Get started in minutes</h1>
+                        <div class="btn-main">
+                            <button class="btn-page">
+                                Create your Substack
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-element-one">
+
+            </div>
+            <div class="footer-element-two">
+
+            </div>
+        </footer>
     </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

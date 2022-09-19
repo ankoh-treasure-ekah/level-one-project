@@ -6,20 +6,84 @@
 ********************/
 
 .section-header-one {
-    height: 126.6vh;
+    height: 880px;
+    padding: 10px;
     background: $section-one-bg-color;
+    box-sizing: border-box;
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #fff;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #fff;
+      }
 }
 
-.landing-page-hero-image {
-    height: 200px;
-    width: 200px;
-    // background-color: blue;
+/**** copy this to style.scss for general ****/
+.flex-container {
+    display: flex;
+    gap: 40px;
+}
 
-    img {
-        width: 100%;
-        height: 100%;
+.nav-box {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+
+
+    button {
+        font-size: 14px;
+        line-height: 21px;
+        height: 40px;
+        font-weight: 600;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        color: #fff;
+        cursor: pointer;
+        white-space: nowrap;
+        text-align: center;
     }
 }
+
+
+.left-box {
+    align-items: center;
+    gap: 28px;
+
+    button {
+        border: none;
+        background: none;
+        color: #ffffff;
+    }
+
+    svg {
+        margin-left: 5px;
+        cursor: pointer;
+        
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+.dropdown-menu {
+    display: none;
+    visibility: hidden;
+}
+
+
 
 .homepage-nav-logo
 .nav-logo-icon{
@@ -29,9 +93,27 @@
 
 
 .right-box {
+    align-items: center;
+    gap: 12px;
 
     .navbar-search {
         position: relative;
+    }
+
+    button {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-button-one {
+        background: $general-color;
+        border: none;
+        padding: 0 14px;
+    }
+
+    .nav-button-two {
+        background: transparent;
     }
 
     input {
@@ -46,6 +128,10 @@
         min-width: 255px;
         appearance: none;
         outline: none;
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+
     }
 
     svg {
@@ -56,5 +142,56 @@
         width: 16px;
 
     }
+}
+
+
+.landing-page-hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1156px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-hero-text {
+    flex-direction: column;
+    color: #fff;
+    flex-basis: 100%;
+    flex-shrink: 1;
+
+    h1 {
+        color: #fff;
+        text-align: start;
+    }
+
+    p {
+        font-size: 17px;
+        letter-spacing: -0.45px;
+        line-height: 23px;
+        font-family: 'SF Pro Text','SF Compact Display',
+            -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+            Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji',
+            'Segoe UI Symbol';
+    }
+
+    .landing-page-hero-buttons {
+        gap: 12px;
+    }
+
+    .hero-btn-two {
+        background: transparent;
+        border: 1px solid #fff;
+    }
+
+}
+
+.landing-page-hero-image {
+    flex-basis: 100%;
+    flex-shrink: 1;
+    // background-color: blue;
+    max-width: 588px;
+    min-width: 200px;
+
 }
 

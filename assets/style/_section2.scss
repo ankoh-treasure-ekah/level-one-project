@@ -1,1 +1,240 @@
 /************contains code for section 2*******/
+.section-container-default {
+    box-sizing: content-box;
+    max-width: 1156px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+}
+
+
+
+
+.content-wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    flex-direction: column;
+}
+
+.section-marketing-content {
+    align-items: center;
+}
+
+
+.homepage-leaderboard-container {
+    width: 100%;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.302);
+    padding: 0;
+    margin: 0;
+    // display: flex;
+    // flex-direction: row;
+}
+
+.overflow-list-container {
+    margin-bottom: -4px;
+    padding-left: 4px;
+    // border-bottom: 1px solid red;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',
+        Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji',
+        'Segoe UI Emoji','Segoe UI Symbol';
+
+    button {
+        cursor: pointer;
+        padding: 20px;
+    }
+
+}
+
+.left-marketing-btn {
+    position: sticky;
+    left: 0;
+    border: none;
+    // background: red;
+    z-index: 2;
+}
+
+.right-marketing-btn {
+    position: sticky;
+    right: 0;
+    border: none;
+    background: transparent;
+}
+
+
+.overflow-items {
+    display: flex;
+    // overflow-x: scroll;
+    -ms-overflow-style: none;
+    overflow-y: visible;
+    // padding: 22px 0px;
+    z-index: 50;
+    margin-bottom: 4px;
+    justify-content: flex-start;
+ 
+    a {
+        // margin-bottom: 2px;
+        position: relative;
+        padding: 22px 0px;
+        // font-size: 17px;
+        line-height: 20px;
+        white-space: nowrap;
+        // font-weight: 600;
+        color: $general-color;
+        cursor: pointer;
+        z-index: 50;
+    } 
+
+    button {
+        padding: 22px 16px;
+        color: #808080;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 20px;
+        white-space: nowrap;
+        // font-weight: 600;
+        border: none;
+        background: transparent;
+
+    }
+
+    button.active {
+        font-weight: 600;
+        color: $general-color;
+    }
+
+    a.active {
+        border-bottom: 2.5px solid $general-color;
+        // font-weight: 600;
+    }
+    
+
+    a:hover {
+        background-color: rgba($color: #e0e0e0, $alpha: 0.3);
+        // border-bottom: 3px solid $general-color;
+        // border-bottom: 3px solid rgba($color: #e0e0e0, $alpha: 0.6);
+    }
+
+}
+
+.overflow-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-item {
+    padding-right: 12px;
+}
+
+.homepage-leaderboard-container {
+    flex-direction: column;
+    gap: 56px;
+}
+
+.hompage-leaderboard-content-container {
+    flex-direction: column;
+    gap: 56px;
+}
+
+.homepage-leaderboard-content-rank {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 78px;
+    height: 64px;
+    color: #e0e0e0;
+    font-weight: 400;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.hompage-leaderboard-content-container-first {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.homepage-leaderboard-content-sec-one {
+    gap: 32px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.homepage-leaderboard-content-link {
+    flex-direction: column;
+    gap: 4px;
+    width: 280px;
+    // text-decoration: none;
+    color: #404040;
+
+    h4 {
+        font-family:  Cahuenga, serif;
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    h5 {
+        font-family: Cahuenga, serif;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 400;
+        // color: ;
+    }
+}
+
+
+.homepage-leaderboard-content-sec-two {
+    flex-direction: column;
+    gap: 8px;
+    color: #404040;
+    font-family: 'SF Pro Text','SF Compact Display',
+        -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+        Helvetica,Arial,sans-serif,'Apple Color Emoji',
+        'Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 23px;
+}
+
+// .homepage-leaderboard-content-sec-two-layer-one {
+    
+// }
+
+.homepage-leaderboard-content-sec-two-layer-two {
+    font-weight: 600;
+}
+
+.btn-main {
+    padding-top: 40px;
+    align-self: center;
+}
+
+.btn-page {  
+    background-color: $general-color;
+    color: #ffffff;
+    border-radius: 6px;
+    height: 52px;
+    display: flex;
+    gap: 12px;
+    font-size: 17px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+}
+
+// .btn-page {
+//     // align-self: center;
+// }
+
+
+
+
+
