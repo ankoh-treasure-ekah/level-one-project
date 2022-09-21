@@ -31,10 +31,11 @@
 }
 
 .overflow-list-container {
+    position: relative;
     margin-bottom: -4px;
-    padding-left: 4px;
+    padding-left: 0px;
     // border-bottom: 1px solid red;
-    overflow-x: scroll;
+    // overflow-x: scroll;
     display: flex;
     justify-content: flex-start;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',
@@ -48,31 +49,79 @@
 
 }
 
-.left-marketing-btn {
-    position: sticky;
+.overflow-container {
+    position: relative;
+    margin-bottom: -0.5px;
+    padding-left: 0px;
+    // border-bottom: 1px solid red;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',
+        Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji',
+        'Segoe UI Emoji','Segoe UI Symbol';
+}
+
+.left-button-container {
+    opacity: 0;
+    position: absolute;
     left: 0;
+    z-index: 1;
+    // margin-right: 50px;
+    padding-right: 20px;
+    display: none;
+    // justify-content: center;
+    background: linear-gradient(to right,white 30%,rgba(255,255,255,0) 100%);
+}
+
+.left-button-container.active {
+    display: flex;
+    opacity: 1;
+}
+
+.right-button-container {
+    // background-color: red;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, white 30%,rgba(255,255,255,0) 100%);
+}
+
+.right-button-container.active {
+    display: none;
+    opacity: 0;
+}
+
+.left-marketing-btn {
+    // position: sticky;
+    // left: 0;
     border: none;
-    // background: red;
-    z-index: 2;
+    background: transparent;
 }
 
 .right-marketing-btn {
-    position: sticky;
-    right: 0;
+    // position: sticky;
+    // right: 0;
     border: none;
     background: transparent;
 }
 
 
 .overflow-items {
+    // position: relative;
     display: flex;
     // overflow-x: scroll;
     -ms-overflow-style: none;
     overflow-y: visible;
     // padding: 22px 0px;
-    z-index: 50;
+    // z-index: 50;
     margin-bottom: 4px;
     justify-content: flex-start;
+    // margin-bottom: -0.1px;
+    
  
     a {
         // margin-bottom: 2px;
@@ -84,11 +133,11 @@
         // font-weight: 600;
         color: $general-color;
         cursor: pointer;
-        z-index: 50;
+        // z-index: 50;
     } 
 
     button {
-        padding: 22px 16px;
+        padding: 22px 13.5px;
         color: #808080;
         cursor: pointer;
         font-size: 17px;
@@ -119,7 +168,10 @@
 
 }
 
-.overflow-list-container::-webkit-scrollbar {
+// .overflow-list-container::-webkit-scrollbar {
+//     display: none;
+// }
+.overflow-container::-webkit-scrollbar {
     display: none;
 }
 
