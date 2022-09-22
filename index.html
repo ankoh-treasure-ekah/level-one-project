@@ -194,7 +194,7 @@
                             </div>
                             <div class="overflow-container">
                                 <div class="overflow-items">
-                                    <div class="menu-item"><a class="target target-1" role="button" tabindex="0"><button onclick="background_button(event, 'target-1')" class="btn-1 overflow-item-text">Featured</button></a></div>
+                                    <div class="menu-item"><a class="target target-1" id="target-1" role="button" tabindex="0"><button onclick="background_button(event, 'target-1')" class="btn-1 overflow-item-text" id="btn-1">Featured</button></a></div>
                                     <div class="menu-item"><a class="target target-2" role="button" tabindex="0"><button onclick="background_button(event, 'target-2')" class="btn-2 overflow-item-text">Culture</button></a></div>
                                     <div class="menu-item"><a class="target target-3" role="button" tabindex="0"><button onclick="background_button(event, 'target-3')" class="btn-3 overflow-item-text">Politics</button></a></div>
                                     <div class="menu-item"><a class="target target-4" role="button" tabindex="0"><button onclick="background_button(event, 'target-4')" class="btn-4 overflow-item-text">Technology</button></a></div>
@@ -463,7 +463,7 @@
                         <img src="./images/phoneV2.png" alt="phone showing list of items">
                         <div class="section-discovery-content-right-conatiner flex-container">
                             <div class="section-discovery-content-container-text-sec flex-container">
-                                <button class="section-discovery-svg-button">
+                                <button class="section-discovery-svg-button default-selection">
                                     <svg role="img" width="32" height="32" viewBox="0 0 16 16" fill="none" stroke-width="1" stroke="#000"
                                         xmlns="http://www.w3.org/2000/svg"><g><title></title>return 
                                         <path d="M4 7L8 11L12 7" stroke="#FF6719" stroke-linecap="round" stroke-linejoin="round"></path>;</g>
@@ -475,7 +475,7 @@
                                         Posts
                                     </h3>
                                 </button>
-                                <div class="panel">
+                                <div class="panel default-selection">
                                     <p class="section-discovery-text">
                                         Substack’s simple system lets you publish to the web, email,
                                          and our app simultaneously so you can find new readers and always
@@ -685,10 +685,82 @@
 
         <footer class="footer">
             <div class="footer-element-one">
+                <div class="footer-element-one-container flex-container">
+                    <div class="footer-element-one-left flex-container">
+                        <svg role="img" width="21" height="24" viewBox="0 0 21 24" fill="#FF6719" stroke-width="1" stroke="none" xmlns="http://www.w3.org/2000/svg" class="navbar-logo-wordmark substack-logo-wordmark"><g><title></title>
+                            <path d="M20.9991 5.40625H0V8.24275H20.9991V5.40625Z"></path>
+                            <path d="M0 10.8125V24.0004L10.4991 18.1107L21 24.0004V10.8125H0Z"></path>
+                            <path d="M20.9991 0H0V2.83603H20.9991V0Z"></path></g>
+                        </svg>
+                        <h3>Substack is the home for great writing</h3>
+
+                    </div>
+                    <div class="footer-element-one-links flex-container">
+                        <div class="footer-element-one-links-col flex-container">
+                            <h3>Read</h3>
+                            <a href="">Discover</a>
+                            <a href="">Get the app</a>
+                            <a href="">Featured</a>
+                            <a href="">Substack Reader</a>
+                            <a href="">Top in culture</a>
+                            <a href="">Top podcasts</a>
+                            <a href="">Top in food & drink</a>
+                            <a href="">Top in finance</a>
+                            <a href="">Top in sports</a>
+                            <a href="">Top in politics</a>
+                            <a href="">Top in technology</a>
+                            <a href="">Top in faith</a>
+                            <a href="">Top in business</a>
+
+                        </div>
+                        <div class="footer-element-one-links-col flex-container">
+                            <h3>Writers</h3>
+                            <a href="">Switch to Substack</a>
+                            <a href="">Switch from Revue</a>
+                            <a href="">Go paid</a>
+                            <a href="">For podcasts</a>
+                            <a href="">For bloggers</a>
+                            <a href="">For finance writers</a>
+                            <a href="">For comic creators</a>
+                            <a href="">For food writers</a>
+                            <a href="">For local news</a>
+                        </div>
+                        <div class="footer-element-one-links-col flex-container">
+                            <h3>Company</h3>
+                            <a href="">About</a>
+                            <a href="">Help</a>
+                            <a href="">Jobs</a>
+                            <a href="">Blog</a>
+                            <a href="">Vulnerability Policy</a>
+                            <a href="">Contact</a>
+                        </div>
+                        <div class="footer-element-one-links-col flex-container">
+                            <h3>Resources</h3>
+                            <a href="">Resource center</a>
+                            <a href="">Guide to going paid</a>
+                            <a href="">Help center</a>
+                            <a href="">Community and programs</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="footer-element-two">
-
+            <div class="footer-element-two flex-container">
+                <div class="footer-element-two-logo">
+                    <a href="https://substack.com/app/get-ios?utm_campaign=app-marketing&utm_content=www-footer">
+                        <img src="./images/app-store-white.png" alt="app store logo">
+                    </a>
+                </div>
+                <div class="footer-element-two-nav">
+                    <nav>
+                        <li>&copy Substack Inc.</li>
+                        <li><a href="https://substack.com/privacy">Privacy</a></li>
+                        <li><a href="https://substack.com/tos">Terms</a></li>
+                        <li><a href="https://substack.com/ccpa#personal-data-collected">Collection notice</a></li>
+                        <li><a href="https://substack.com/sitemap">Sitemap</a></li>
+                        
+                    </nav>
+                </div>
             </div>
         </footer>
     </div>

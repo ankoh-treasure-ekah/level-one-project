@@ -2,7 +2,13 @@
 
 .footer {
     background: #f5f5f5;
+    font-family: 'SF Pro Display','Inter',
+        'Segoe UI',Roboto,Helvetica,Arial,
+        sans-serif,'Apple Color Emoji',
+        'Segoe UI Emoji','Segoe UI Symbol';
+    letter-spacing: -.012em;
 }
+
 
 .footer-element-one {
     max-width: 1276px;
@@ -10,6 +16,117 @@
     padding: 64px 0;
     font-size: 15px;
     color: gray;
+    
+}
+
+.footer-element-one-container {
+    width: 1124px;
+    margin: 0 auto;
+    flex-direction: row;
+    // gap: 50px;
+    justify-content: space-between;
+    // padding: 0 15px;
+
+}
+
+.footer-element-one-left {
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 254px;
+    margin-right: 10px;
+
+    h3 {
+        text-align: left;
+        font-family: Cahuenga,serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 28px;
+        margin-top: 1.25rem;
+    }
+}
+
+.footer-element-one-links {
+    flex-direction: row;
+    gap: 0px;
+    line-height: 150%;
 }
 
 
+
+.footer-element-one-links-col {
+    flex-direction: column;
+    gap: 0px;
+    width: 152px;
+    margin-left: 68px;
+    text-align: left;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25.5px;
+        color: #3a261c;
+    }
+
+    a {
+        margin-top: 10px;
+        text-decoration: none;
+        color: grey;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-element-one-links-col:first-child {
+    margin-left: 0px;
+}
+
+
+
+.footer-element-two {
+    max-width: 1124px;
+    // height: 40px;
+    margin: 0 auto;
+    padding: 25px 0px;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 21px;
+    color: gray;
+    
+}
+
+.footer-element-two-logo {
+    height: 40px;
+    
+    a {
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+
+.footer-element-two-nav {
+    
+    nav {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+
+        li {
+
+            a {
+
+                color: grey;
+            }
+        }
+    }
+}

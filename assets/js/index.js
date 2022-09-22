@@ -1,20 +1,25 @@
 // all js code goes here
 
-//function to change button border-bottom color
+//function to change button border-bottom color for section 2 links
+
+var default_target = document.getElementById('target-1');
+var default_btn = document.getElementById('btn-1');
+
+default_target.className += ' active';
+default_btn.className += ' active';
 
 function background_button(evt, aName) {
 
     var links = document.getElementsByClassName('target');
+
     var buttons = document.getElementsByClassName('overflow-item-text');
     for (i = 0; i < links.length; i++) {
         links[i].className = links[i].className.replace(" active", "");
         buttons[i].className = buttons[i].className.replace(" active", "");
-        // console.log(links[i])
     }
 
     for (i = 0; i < links.length; i++) {
        if(links[i].className.split(" ").includes(aName)) {
-            // console.log(typeof(links[i].className))
             links[i].className += " active";
             evt.currentTarget.className += " active";
        }
@@ -30,27 +35,35 @@ var panel = document.getElementsByClassName('panel');
 
 //IF THIS CODE GETS DELETED AM DEAD
 
+//DEFAULT
+var default_selection = document.getElementsByClassName('default-selection');
+
+for(i=0; i<default_selection.length; i++){
+    default_selection[i].className += ' active';
+    if(i==0){
+        default_selection[i].className += ' currently_clicked';
+    }
+
+    if (i==1) {
+        default_selection[i].style.maxHeight = default_selection[i].scrollHeight + 'px';
+    }
+}
+
 for (i=0; i<acc_button.length; i++) {
     acc_button[i].addEventListener('click', function() {
         for (i=0; i<acc_button.length; i++) {
             acc_button[i].className = acc_button[i].className.replace(' active', "" );
-            // console.log(acc_button[i])
-            // acc_button[i].nextElementSibling.nextElementSibling.className = acc_button[i].nextElementSibling.nextElementSibling.className.replace(' active', "");
+            button[i].nextElementSibling.nextElementSibling.className = acc_button[i].nextElementSibling.nextElementSibling.className.replace(' active', "");
             acc_button[i].nextElementSibling.nextElementSibling.style.maxHeight = null;
-            // console.log(acc_button[i].nextElementSibling.nextElementSibling.className)
         }
 
         var panel_sibling = this.nextElementSibling.nextElementSibling;
 
         if (this.className.split(" ").includes('currently_clicked')){
-            // console.log(this.className)
 
             this.className = this.className.replace(' currently_clicked', "");
             this.className = this.className.replace(' active', "");
             panel_sibling.style.maxHeight = null;
-            // panel_sibling.className = panel_sibling.className.replace(' active', "");
-            // console.log('true')
-            // console.log(this.className)
             
         }
 
@@ -60,11 +73,9 @@ for (i=0; i<acc_button.length; i++) {
             }
             this.className += ' active';
             this.className += ' currently_clicked';
-            // console.log('false')
             panel_sibling.className += ' active';
 
             panel_sibling.style.maxHeight = panel_sibling.scrollHeight +'px';
-            // console.log("🚀 ~ file: index.js ~ line 70 ~ acc_button[i].addEventListener ~ scrollHeight", panel_sibling.scrollHeight)
 
 
         }
@@ -104,7 +115,7 @@ scroll_check.addEventListener('scroll', function(){
         left_button_container.className = left_button_container.className.replace(' active', "");
     }
 
-    if(scroll_check.scrollLeft == 1986) {
+    if(scroll_check.scrollLeft > 1986) {
         right_button_container.className += ' active';
     }
 
