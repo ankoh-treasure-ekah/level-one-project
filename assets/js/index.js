@@ -1,5 +1,95 @@
 // all js code goes here
 
+// CODE FOR NAV BAR DROP DOWNS WILL GO HERE
+var dropdown_menu = document.getElementsByClassName('dropdown-menu');
+var left_nav_buttons = document.getElementsByClassName('left-nav-buttons');
+var resource_btn = document.getElementById('resource-button');
+var writers_btn = document.getElementById('writers-button');
+var readers_btn = document.getElementById('readers-button');
+
+var body_container = document.getElementById('body-container');
+
+var resource_btn_clicked = 'false';
+var writers_btn_clicked = 'false';
+var readers_btn_clicked = 'false';
+var btn_clicked = 'false';
+
+resource_btn.addEventListener('click', function(){
+    console.log('resource btn-clicked');
+    btn_clicked = 'true';
+})
+writers_btn.addEventListener('click', function(){
+    console.log('writers btn-clicked');
+    btn_clicked = 'true';
+})
+readers_btn.addEventListener('click', function(){
+    console.log('readers btn-clicked');
+    btn_clicked = 'true';
+})
+
+body_container.addEventListener('click', function(){
+    if(btn_clicked == 'true'){
+        btn_clicked = 'false';
+    }
+
+    else{
+        console.log('hello'); 
+        for(i=0; i<dropdown_menu.length; i++){
+            dropdown_menu[i].className = dropdown_menu[i].className.replace(' active', "");
+            dropdown_menu[i].className = dropdown_menu[i].className.replace(' currently_clicked', "");
+        }
+    }
+})
+// resource_btn.focus();
+
+// resource_btn.addEventListener('focusin', function(){
+//     console.log('out of focus')
+// })
+
+function display_dropdown(evt, target){
+    
+
+    for(i=0; i<dropdown_menu.length; i++){
+        // console.log(dropdown_menu)
+        var drop = dropdown_menu[i];
+
+
+        for(i=0; i<dropdown_menu.length; i++){
+            dropdown_menu[i].className = dropdown_menu[i].className.replace(' active', "");
+        }
+        // console.log(drop.className)
+
+        for(i=0; i<dropdown_menu.length; i++){
+            if (dropdown_menu[i].className.split(' ').includes(target)) {
+                // console.log('true')
+                if (dropdown_menu[i].className.split(' ').includes('currently_clicked')) {
+                    dropdown_menu[i].className = dropdown_menu[i].className.replace(' active', "");
+                    dropdown_menu[i].className = dropdown_menu[i].className.replace(' currently_clicked', "");
+                }
+                else{
+                    for (i=0; i<dropdown_menu.length; i++) {
+                        dropdown_menu[i].className = dropdown_menu[i].className.replace(' currently_clicked', "" );
+                    }
+                    for(i=0; i<dropdown_menu.length; i++){
+                        if (dropdown_menu[i].className.split(' ').includes(target)) {
+                            dropdown_menu[i].className += ' active';
+                            dropdown_menu[i].className += ' currently_clicked';
+                            
+                        }
+                    }  
+    
+                    
+                }
+                // dropdown_menu[i].style.opa = 'block';
+            }
+        
+        }
+    }
+}
+
+
+
+
 //function to change button border-bottom color for section 2 links
 
 var default_target = document.getElementById('target-1');
@@ -53,7 +143,7 @@ for (i=0; i<acc_button.length; i++) {
     acc_button[i].addEventListener('click', function() {
         for (i=0; i<acc_button.length; i++) {
             acc_button[i].className = acc_button[i].className.replace(' active', "" );
-            button[i].nextElementSibling.nextElementSibling.className = acc_button[i].nextElementSibling.nextElementSibling.className.replace(' active', "");
+            // acc_button[i].nextElementSibling.nextElementSibling.className = acc_button[i].nextElementSibling.nextElementSibling.className.replace(' active', "");
             acc_button[i].nextElementSibling.nextElementSibling.style.maxHeight = null;
         }
 

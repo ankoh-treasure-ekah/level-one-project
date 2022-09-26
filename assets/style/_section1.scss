@@ -38,7 +38,7 @@
 
 
     button {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 21px;
         height: 40px;
         font-weight: 600;
@@ -55,6 +55,7 @@
 .left-box {
     align-items: center;
     gap: 28px;
+    position: relative;
 
     button {
         border: none;
@@ -77,13 +78,83 @@
     }
 }
 
+// .writers-dropdown {
+//     display: none;
+// }
+// .readers-dropdown {
+//     display: none;
+// }
 
 .dropdown-menu {
-    display: none;
+    // display: none;
+    opacity: 0;
     visibility: hidden;
+    position: absolute;
+    top: 100%;
+    width: 228px;
+    background-color: white;
+    border-radius: 8px;
+    transition: opacity 0.5s;
+
+    li {
+        cursor: pointer;
+        margin: 0px 8px;
+        border-radius: 4px;
+    }
+
+    li:hover {
+        background-color: rgba(0,0,0,0.1);
+    }
+
+
+
+    a {
+        text-decoration: none;
+        color: #3a261c;
+        font-size: 16px;
+        font-weight: 400;
+        // display: block;
+        
+    }
 }
 
 
+// .left-nav-buttons:focus + svg + ul{
+//     // background-color: blue;
+//     visibility: visible;
+//     display: block;
+//     opacity: 1;
+// }
+
+
+.dropdown-menu.active {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+
+.underline {
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 14px 0px;
+    margin: 0px 25px;
+    white-space: nowrap;
+}
+
+.drop-item:first-child {
+    margin-top: 8px;
+}
+
+.drop-item:last-child {
+    margin-bottom: 8px;
+}
+
+
+// .resource-button:hover .resource-dropdown {
+//     // display: block;
+//     // visibility: visible;
+//     background-color: black;
+// }
 
 .homepage-nav-logo
 .nav-logo-icon{
@@ -93,7 +164,7 @@
 
 
 .right-box {
-    align-items: center;
+    // align-items: center;
     gap: 12px;
 
     .navbar-search {
@@ -146,15 +217,17 @@
 
 
 .landing-page-hero {
+    gap: 20px;
     padding-top: 120px;
     padding-bottom: 120px;
-    max-width: 1156px;
+    max-width: 1070px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
 .landing-page-hero-text {
+    gap: 24px;
     flex-direction: column;
     color: #fff;
     flex-basis: 100%;
@@ -166,7 +239,7 @@
     }
 
     p {
-        font-size: 17px;
+        font-size: 15.5px;
         letter-spacing: -0.45px;
         line-height: 23px;
         font-family: 'SF Pro Text','SF Compact Display',
