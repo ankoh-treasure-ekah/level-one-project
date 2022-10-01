@@ -1,0 +1,31 @@
+.section-three-level-container {
+    flex-direction: column;
+}
+
+.section-three-levels-img-container {
+    min-width: 220px;
+    // width: 50%;
+    flex-basis: 100%;
+    text-align: center;
+
+    img {
+
+        width: 60%;
+    }
+}
+
+.section-three-levels-container{
+    padding: 0 20px;
+}
+
+.section-header-default{
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.section-three-levels-text-container{
+
+    h3 {
+        font-size: 30px;
+    }
+}

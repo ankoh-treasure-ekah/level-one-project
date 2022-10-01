@@ -3,7 +3,7 @@
     box-sizing: content-box;
     max-width: 1070px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 0px;
 
 }
 
@@ -137,10 +137,10 @@
     } 
 
     button {
-        padding: 22px 13.5px;
+        padding: 22px 15px;
         color: #808080;
         cursor: pointer;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 20px;
         white-space: nowrap;
         // font-weight: 600;
@@ -228,7 +228,7 @@
 
     h4 {
         font-family:  Cahuenga, serif;
-        font-size: 26px;
+        font-size: 23px;
         line-height: 30px;
         font-weight: 600;
         text-decoration: none;
@@ -236,9 +236,9 @@
 
     h5 {
         font-family: Cahuenga, serif;
-        font-size: 22px;
+        font-size: 21px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: 300;
         // color: ;
     }
 }
@@ -278,11 +278,24 @@
     display: flex;
     gap: 12px;
     font-size: 17px;
-    padding: 0 20px;
+    // padding: 0 0px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: 1px solid transparent;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    span:hover {
+        background-color: rgba(0,0,0,0.1);
+
+    }
     
 }
 

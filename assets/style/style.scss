@@ -8,3 +8,14 @@
 @import '_section6';
 @import '_section7';
 @import '_footer';
+
+@media (max-width: 630px) {
+    @import '_section1mobile';
+    @import '_section2mobile';
+    @import '_section3mobile';
+    @import '_section4mobile';
+    @import '_section5mobile';
+    @import '_section6mobile';
+    @import '_section7mobile';
+    @import '_footermobile';
+}

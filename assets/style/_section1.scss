@@ -5,6 +5,11 @@
 ********************
 ********************/
 
+.hamburger-menu,
+.overlay-closer {
+    display: none;
+}
+
 .section-header-one {
     height: 880px;
     padding: 10px;
@@ -12,16 +17,16 @@
     box-sizing: border-box;
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #fff;
+        color: rgba(221, 213, 213, 0.622);
         opacity: 1; /* Firefox */
       }
       
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #fff;
+        color: rgba(221, 213, 213, 0.622);
       }
       
       ::-ms-input-placeholder { /* Microsoft Edge */
-        color: #fff;
+        color: rgba(221, 213, 213, 0.622);
       }
 }
 
@@ -51,6 +56,11 @@
     }
 }
 
+// .hamburger-menu {
+//     // border: none;
+//     background-color: blue;
+// }
+
 
 .left-box {
     align-items: center;
@@ -60,7 +70,8 @@
     button {
         border: none;
         background: none;
-        color: #ffffff;
+        // color: #ffffff;
+        color: #fff;
     }
 
     svg {
@@ -76,6 +87,12 @@
     a {
         text-decoration: none;
     }
+}
+
+.overlay-drop {
+    display: flex;
+    gap: 28px;
+    // justify-content: flex-start;
 }
 
 // .writers-dropdown {
@@ -103,7 +120,7 @@
     }
 
     li:hover {
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(192, 192, 192, 0.2);
     }
 
 
@@ -140,6 +157,17 @@
     margin: 0px 25px;
     white-space: nowrap;
 }
+
+.dropdown-wrapper {
+    li:last-child {
+        span {
+            border-bottom: none;
+        }
+        // background-color: blue;
+    }
+}
+
+
 
 .drop-item:first-child {
     margin-top: 8px;
@@ -250,12 +278,31 @@
 
     .landing-page-hero-buttons {
         gap: 12px;
+
+        span {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+            // background-color: blue;
+            // padding: 0 20px;
+        }
+
+        .hero-btn-two:hover {
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        
+        
+        
     }
 
     .hero-btn-two {
         background: transparent;
         border: 1px solid #fff;
     }
+    
 
 }
 

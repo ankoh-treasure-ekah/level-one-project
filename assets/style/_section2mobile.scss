@@ -1,0 +1,33 @@
+.right-button-container {
+    display: none;
+}
+
+.left-button-container {
+    display: none;
+}
+
+.right-button-container.active {
+    display: none;
+    opacity: 0;
+}
+
+.left-button-container.active {
+    display: none;
+    opacity: 0;
+}
+
+.section-marketing-content {
+    padding: 50px 20px;
+}
+
+.hompage-leaderboard-content-container-first {
+    flex-direction: column;
+}
+
+.homepage-leaderboard-content-sec-one {
+    flex-direction: column;
+}
+
+.homepage-leaderboard-content-rank {
+    display: none;
+}

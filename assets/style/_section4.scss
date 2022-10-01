@@ -22,9 +22,9 @@
     padding: 0 40px;
 
     img {
-        max-width: 568px;
+        max-width: 528px;
         // min-width: 200px;
-        flex-basis: 568px;
+        // flex-basis: 568px;
         flex-shrink: 1;
     }
 }
@@ -46,6 +46,7 @@
     padding: 32px 0 32px 65px;
     border-bottom: 1px solid #e0e0e0;
     max-width: 445px;
+    min-height: 140px;
 
     button {
         border: none;
@@ -84,7 +85,8 @@
 
 .section-discovery-btn-head {
     font-family: Cahuenga, serif;
-    font-size: 34px;
+    // font-size: 28px;
+    font-size: 1.8rem;
     line-height: 40.13px;
     color: #404040;
     // font-weight: 100;

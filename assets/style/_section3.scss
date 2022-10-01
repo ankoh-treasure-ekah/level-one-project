@@ -21,7 +21,7 @@
 
 .section-three-levels-container {
     flex-direction: column;
-    gap: 0px;
+    gap: 80px;
 }
 
 .section-three-level-container {
@@ -33,17 +33,20 @@
 
 
 .section-three-levels-img-container {
-    min-width: 200px;
-    width: 50%;
+    min-width: 220px;
+    // width: 50%;
+    flex-basis: 100%;
 
     img {
+
         width: 100%;
     }
 }
 
 .section-three-levels-text-container {
     flex-direction: column;
-    width: 50%;
+    // width: 50%;
+    flex-basis: 100%;
     gap: 24px;
 
     h3 {

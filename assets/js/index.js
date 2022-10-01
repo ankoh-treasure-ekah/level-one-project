@@ -1,5 +1,24 @@
 // all js code goes here
 
+
+//CODE FOR HARMBURGER MENU HERE
+var overlay = document.getElementById('overlay-drop');
+var overlay_closer = document.getElementById('overlay-closer');
+var hamburger = document.getElementById('hamburger-menu');
+hamburger.addEventListener('click', function(){
+    console.log('hamburger clicked');
+    overlay.className += ' active';
+    overlay_closer.style.display = 'block';
+});
+
+overlay_closer.addEventListener('click', function(){
+    console.log('cloder cloeck')
+    overlay.className = overlay.className.replace(' active', "");
+    overlay_closer.style.display = 'none';
+});
+
+
+
 // CODE FOR NAV BAR DROP DOWNS WILL GO HERE
 var dropdown_menu = document.getElementsByClassName('dropdown-menu');
 var left_nav_buttons = document.getElementsByClassName('left-nav-buttons');
@@ -15,15 +34,15 @@ var readers_btn_clicked = 'false';
 var btn_clicked = 'false';
 
 resource_btn.addEventListener('click', function(){
-    console.log('resource btn-clicked');
+    // console.log('resource btn-clicked');
     btn_clicked = 'true';
 })
 writers_btn.addEventListener('click', function(){
-    console.log('writers btn-clicked');
+    // console.log('writers btn-clicked');
     btn_clicked = 'true';
 })
 readers_btn.addEventListener('click', function(){
-    console.log('readers btn-clicked');
+    // console.log('readers btn-clicked');
     btn_clicked = 'true';
 })
 
@@ -33,7 +52,7 @@ body_container.addEventListener('click', function(){
     }
 
     else{
-        console.log('hello'); 
+        // console.log('hello'); 
         for(i=0; i<dropdown_menu.length; i++){
             dropdown_menu[i].className = dropdown_menu[i].className.replace(' active', "");
             dropdown_menu[i].className = dropdown_menu[i].className.replace(' currently_clicked', "");
@@ -89,8 +108,22 @@ function display_dropdown(evt, target){
 
 
 
+//CODE TO CHANGE TAB INDEX OF SECTION TWO
+
+
 
 //function to change button border-bottom color for section 2 links
+var tabs = document.getElementsByClassName('hompage-leaderboard-content-container');
+var tab_one = document.getElementById('1');
+
+
+for(i=0; i<tabs.length; i++){
+    tabs[i].style.display = 'none';
+}
+
+tab_one.style.display = 'flex';
+
+
 
 var default_target = document.getElementById('target-1');
 var default_btn = document.getElementById('btn-1');
@@ -98,7 +131,14 @@ var default_btn = document.getElementById('btn-1');
 default_target.className += ' active';
 default_btn.className += ' active';
 
-function background_button(evt, aName) {
+function background_button(evt, aName, tab) {
+    var new_tab = document.getElementById(tab);
+    for(i=0; i<tabs.length; i++){
+        tabs[i].style.display = 'none';
+    }
+    new_tab.style.display = 'flex';
+    new_tab.style.zIndex = 500;
+
 
     var links = document.getElementsByClassName('target');
 
@@ -153,7 +193,7 @@ for (i=0; i<acc_button.length; i++) {
 
             this.className = this.className.replace(' currently_clicked', "");
             this.className = this.className.replace(' active', "");
-            panel_sibling.style.maxHeight = null;
+            // panel_sibling.style.maxHeight = null;
             
         }
 
