@@ -245,7 +245,7 @@ scroll_check.addEventListener('scroll', function(){
         left_button_container.className = left_button_container.className.replace(' active', "");
     }
 
-    if(scroll_check.scrollLeft > 1986) {
+    if(scroll_check.scrollLeft > 1796) {
         right_button_container.className += ' active';
     }
 
