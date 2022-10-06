@@ -13,17 +13,29 @@
 .overlay-drop{
     display: flex;
     flex-direction: column;
-    height: 200vh;
-    width: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100vw);
     overflow-x: hidden;
     position: fixed;
     left: 0;
     top: 0;
     background-color: white;
     z-index: 700;
-    transition: width 0.4s;
+    transition: transform 0.4s;
     padding-top: 35px;
 }
+
+.drop-container {
+    position: relative;
+    top: 3%;
+    left: 10;
+    // width: 100%;
+    // text-align: center;
+    // text-align: left;
+    // margin-top: 30px;
+}
+
 .drop-container:nth-child(2){
     order: 1;
 }
@@ -39,7 +51,8 @@
 
 
 .overlay-drop.active {
-    width: 100vw;
+    transform: translateX(0vw);
+    
 }
 
 .dropdown-menu {

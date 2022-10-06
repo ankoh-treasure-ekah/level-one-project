@@ -1147,17 +1147,26 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 200vh;
-    width: 0;
+    height: 100vh;
+    width: 100vw;
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
     overflow-x: hidden;
     position: fixed;
     left: 0;
     top: 0;
     background-color: white;
     z-index: 700;
-    -webkit-transition: width 0.4s;
-    transition: width 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
     padding-top: 35px;
+  }
+  .drop-container {
+    position: relative;
+    top: 3%;
+    left: 10;
   }
   .drop-container:nth-child(2) {
     -webkit-box-ordinal-group: 2;
@@ -1175,7 +1184,8 @@ button {
             order: 4;
   }
   .overlay-drop.active {
-    width: 100vw;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
   }
   .dropdown-menu {
     width: 100%;
