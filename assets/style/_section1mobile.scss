@@ -3,11 +3,7 @@
     padding: 0 20px;
 }
 
-.overlay-closer {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-}
+
 
 
 .overlay-drop{
@@ -110,6 +106,12 @@
         white-space: nowrap;
         text-align: center;
     }
+}
+
+.overlay-closer {
+    position: absolute;
+    top: 30px;
+    right: 20px;
 }
 
 .drop-container {
