@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
+    // width: 100%;
     margin: 0;
     padding: 0;
     // overflow-y: scroll;
   }
 
-  button {
-    outline: none;
-  }
-    
+  
+
+body {
+  overflow-x: hidden;
+  min-width: fit-content;
+}
+
+button {
+  outline: none;
+}

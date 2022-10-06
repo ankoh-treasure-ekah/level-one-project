@@ -9,6 +9,11 @@
 @import '_section7';
 @import '_footer';
 
+
+@media (max-width: 1148px) {
+   @import '_footertablet';
+}
+
 @media (max-width: 630px) {
     @import '_section1mobile';
     @import '_section2mobile';
@@ -19,3 +24,4 @@
     @import '_section7mobile';
     @import '_footermobile';
 }
+

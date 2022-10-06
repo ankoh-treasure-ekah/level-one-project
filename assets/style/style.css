@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 button {
   outline: none;
 }
@@ -21,7 +28,6 @@ button {
 }
 
 .section-header-one {
-  height: 880px;
   padding: 10px;
   background: #006F5c;
   -webkit-box-sizing: border-box;
@@ -1114,6 +1120,15 @@ button {
   color: grey;
 }
 
+@media (max-width: 1148px) {
+  .footer-element-one-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 630px) {
   .section-header-one {
     padding: 0 20px;
@@ -1131,7 +1146,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    height: 200vh;
     width: 0;
     overflow-x: hidden;
     position: fixed;
