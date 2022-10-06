@@ -1,3 +1,23 @@
 .footer-element-one-container {
     flex-direction: column-reverse;
+    // align-items: center;
+}
+
+.footer-element-one-left {
+    // align-self: flex-start;
+    margin: 0 15vw;
+}
+
+.footer-element-one-links {
+    margin: 0 15vw;
+    width: 80vw;
+
+}
+.footer-element-one-links-col {
+    width: 180px;
+    margin-left: 25px;
+}
+
+.footer-element-two {
+    padding: 0 3vw;
 }
