@@ -13,6 +13,10 @@ button {
   outline: none;
 }
 
+.body-container {
+  overflow-x: hidden;
+}
+
 /*******************Contains all section one style including nav*******
 ********************
 ********************
