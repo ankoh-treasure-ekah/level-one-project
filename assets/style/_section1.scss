@@ -195,6 +195,10 @@
     // align-items: center;
     gap: 12px;
 
+    a {
+        text-decoration: none;
+    }
+
     .navbar-search {
         position: relative;
     }
@@ -252,6 +256,10 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .landing-page-hero-text {

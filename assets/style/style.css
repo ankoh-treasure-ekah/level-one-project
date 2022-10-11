@@ -203,6 +203,10 @@ button {
   gap: 12px;
 }
 
+.right-box a {
+  text-decoration: none;
+}
+
 .right-box .navbar-search {
   position: relative;
 }
@@ -266,6 +270,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.landing-page-hero a {
+  text-decoration: none;
 }
 
 .landing-page-hero-text {
@@ -594,6 +602,10 @@ button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.btn-main a {
+  text-decoration: none;
 }
 
 .btn-page {
