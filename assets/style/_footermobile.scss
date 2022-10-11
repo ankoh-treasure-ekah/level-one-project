@@ -16,6 +16,12 @@
 
 .footer-element-one-left {
     margin: 0;
+    max-width: 100%;
+
+    h3 {
+
+        font-size: 20px;
+    }
 }
 
 .footer-element-one-links-col {
@@ -35,18 +41,19 @@
 .footer-element-one,
 .footer-element-two {
     padding: 18px 20px;
+    margin: 0;
 }
 
 .footer-element-two-logo {
     height: 40px;
     gap: 10px;
-    width: 80vw;
+    // width: 80vw;
     
     a {
         width: 50%;
 
         img {
-            width: 100%;
+            width: 134px;
             height: 100%;
             border: 1px solid #e0e0e0;
             border-radius: 7px;
