@@ -14,7 +14,34 @@
    @import '_footertablet';
 }
 
+@media (max-width: 900px) {
+    .right-box {
+
+        form {
+            display: none;
+        }
+    }
+    
+    section {
+        padding: 0 3vw;
+    }
+
+    .section-discovery-content-container {
+        padding: 0;
+
+        img {
+            max-width: 461px;
+            // min-width: 200px;
+            // flex-basis: 568px;
+            flex-shrink: 1;
+        }
+    }
+}
+
 @media (max-width: 630px) {
+    section {
+        padding: 0;
+    }
     @import '_section1mobile';
     @import '_section2mobile';
     @import '_section3mobile';
