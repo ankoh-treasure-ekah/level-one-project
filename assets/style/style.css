@@ -817,6 +817,7 @@ button {
 .section-discovery-content-container-text-sec button {
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 
 .panel {
@@ -1313,6 +1314,9 @@ button {
   }
   .logo-svg {
     width: 19px;
+  }
+  .right-box a {
+    text-decoration: none;
   }
   .right-box button {
     padding: 0px 10px;
