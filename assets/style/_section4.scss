@@ -19,12 +19,12 @@
     gap: 40px;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 40px;
+    // padding: 0 40px;
 
     img {
-        max-width: 528px;
-        // min-width: 200px;
-        // flex-basis: 568px;
+        max-width: 50%;
+        min-width: 200px;
+        flex-basis: 568px;
         flex-shrink: 1;
     }
 }
@@ -33,7 +33,9 @@
 .section-discovery-content-right-conatiner {
     flex-direction: column;
     gap: 0px;
-    flex-basis: 470px;
+    // max-width: 50%;
+    // min-width: 50%;
+    flex-basis: 50%;
     flex-shrink: 1;
 }
 
@@ -94,7 +96,7 @@
 }
 
 .section-discovery-text {
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: -0.45px;
     line-height: 23px;
     color: #404040;
