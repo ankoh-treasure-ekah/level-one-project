@@ -157,6 +157,8 @@ function background_button(evt, aName, tab) {
 }
 
 
+
+
 //code for accordion for section 4 starts here
 
 var acc_button = document.getElementsByClassName('section-discovery-svg-button');
